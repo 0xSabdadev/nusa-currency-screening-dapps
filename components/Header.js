@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import {useRouter} from 'next/router'
-import { ConnectButton } from '@rainbow-me/rainbowkit';
+import {ConnectButton} from '@rainbow-me/rainbowkit'
 
 export default function Header() {
     const router = useRouter()
@@ -10,19 +10,29 @@ export default function Header() {
     }
 
     return (
-        <nav className='font-roboto bg-darkmain-800 fixed w-full z-20 top-0 start-0 border-b border-gray-200 '>
+        <nav className='font-roboto bg-darkmain-800 fixed w-full z-20 top-0 start-0 '>
             <div className='max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4'>
                 <div
                     onClick={redirectToHome}
                     className='flex items-center space-x-3 rtl:space-x-reverse cursor-pointer'>
                     <Image src='/logox.svg' alt='Logo' width={180} height={120} />
                 </div>
-                <div className='flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse'>
-                    <ConnectButton/>
+                <div className='flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse font-roboto'>
+                    <ConnectButton
+                        label='Connect Wallets'
+                        accountStatus={{
+                            smallScreen: 'avatar',
+                            largeScreen: 'full',
+                        }}
+                        showBalance={{
+                            smallScreen: false,
+                            largeScreen: true,
+                        }}
+                    />
                     <button
                         data-collapse-toggle='navbar-sticky'
                         type='button'
-                        className='inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600'
+                        className='inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 '
                         aria-controls='navbar-sticky'
                         aria-expanded='false'>
                         <span className='sr-only'>Open main menu</span>
@@ -45,7 +55,7 @@ export default function Header() {
                 <div
                     className='items-center justify-between hidden w-full md:flex md:w-auto md:order-1'
                     id='navbar-sticky'>
-                    <ul className='flex flex-col p-4 md:p-0 mt-4 font-medium border  rounded-lg bg-darkmain-800 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0'>
+                    <ul className='flex flex-col p-4 md:p-0 mt-4 font-medium   rounded-lg bg-darkmain-800 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 0'>
                         <li>
                             <a
                                 href='#'
