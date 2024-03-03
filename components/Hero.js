@@ -57,7 +57,7 @@ export default function Hero({resultRef}) {
                     data-aos-duration='800'
                     data-aos-easing='ease-in-out'
                     data-aos-once='true'>
-                    <Image src='/pobox.svg' alt='mockup' width={520} height={383} />
+                    <Image src='/pobox.svg' alt='mockup' width={520} height={383} priority />
                 </div>
             </div>
         </section>
