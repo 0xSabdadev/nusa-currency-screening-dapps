@@ -16,8 +16,10 @@ module.exports = {
                 greendark: '#1b5c60',
                 greenwood: '#16ff7f99',
                 dark: '#121312',
+                redfalcon: '#F1272E',
+                reddark: '#601b1b',
                 darkmain: {
-                    300: '#1B1F1E;',
+                    300: '#212423;',
                     500: '#1B1F1E;',
                     800: '#121615;',
                 },
