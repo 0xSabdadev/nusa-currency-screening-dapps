@@ -6,6 +6,7 @@ import {useEffect} from 'react'
 import {initFlowbite} from 'flowbite'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
+import Head from 'next/head'
 import {
     RainbowKitProvider,
     getDefaultWallets,
@@ -57,6 +58,9 @@ export default function App({Component, pageProps}) {
                         fontStack: 'system',
                         overlayBlur: 'small',
                     })}>
+                    <Head>
+                        <link rel='icon' href='/icon.svg' />
+                    </Head>
                     <Component {...pageProps} />
                 </RainbowKitProvider>
             </QueryClientProvider>
