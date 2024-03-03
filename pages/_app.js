@@ -4,6 +4,8 @@ import '@rainbow-me/rainbowkit/styles.css'
 import {useRouter} from 'next/router'
 import {useEffect} from 'react'
 import {initFlowbite} from 'flowbite'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 import {
     RainbowKitProvider,
     getDefaultWallets,
@@ -40,6 +42,9 @@ export default function App({Component, pageProps}) {
     useEffect(() => {
         initFlowbite()
     })
+    useEffect(() => {
+        AOS.init()
+    }, [])
     return (
         <WagmiProvider config={config}>
             <QueryClientProvider client={queryClient}>

@@ -14,10 +14,27 @@ export default function Header() {
             <div className='max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4'>
                 <div
                     onClick={redirectToHome}
-                    className='flex items-center space-x-3 rtl:space-x-reverse cursor-pointer'>
-                    <Image src='/logox.svg' alt='Logo' width={180} height={120} />
+                    className='flex items-center space-x-3 rtl:space-x-reverse cursor-pointer'
+                    data-aos='fade-down'
+                    data-aos-delay='50'
+                    data-aos-duration='800'
+                    data-aos-easing='ease-in-out'
+                    data-aos-once='true'>
+                    <Image
+                        src='/logox.svg'
+                        className='h-8 w-auto'
+                        alt='Logo'
+                        width={180}
+                        height={120}
+                    />
                 </div>
-                <div className='flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse font-roboto'>
+                <div
+                    className='flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse font-roboto'
+                    data-aos='fade-down'
+                    data-aos-delay='150'
+                    data-aos-duration='800'
+                    data-aos-easing='ease-in-out'
+                    data-aos-once='true'>
                     <ConnectButton
                         label='Connect Wallets'
                         accountStatus={{
@@ -32,7 +49,7 @@ export default function Header() {
                     <button
                         data-collapse-toggle='navbar-sticky'
                         type='button'
-                        className='inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 '
+                        className='inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-greenmain rounded-lg md:hidden hover:bg-greenmain hover:text-dark focus:outline-none '
                         aria-controls='navbar-sticky'
                         aria-expanded='false'>
                         <span className='sr-only'>Open main menu</span>
@@ -54,8 +71,13 @@ export default function Header() {
                 </div>
                 <div
                     className='items-center justify-between hidden w-full md:flex md:w-auto md:order-1'
-                    id='navbar-sticky'>
-                    <ul className='flex flex-col p-4 md:p-0 mt-4 font-medium   rounded-lg bg-darkmain-800 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 0'>
+                    id='navbar-sticky'
+                    data-aos='fade-down'
+                    data-aos-delay='150'
+                    data-aos-duration='800'
+                    data-aos-easing='ease-in-out'
+                    data-aos-once='true'>
+                    <ul className='flex flex-col p-4 md:p-0 mt-4 font-medium   rounded-lg bg-darkmain-800 md:space-x-2 lg:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 0'>
                         <li>
                             <a
                                 href='#'

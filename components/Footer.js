@@ -5,9 +5,13 @@ export default function Footer() {
         <footer className='bg-darkmain-800 '>
             <div className='w-full max-w-screen-xl mx-auto p-4 md:py-8'>
                 <div className='sm:flex sm:items-center sm:justify-between'>
-                    <a
-                        href='#'
-                        className='flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse'>
+                    <div
+                        className='flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse'
+                        data-aos='fade-up'
+                        data-aos-delay='650'
+                        data-aos-duration='800'
+                        data-aos-easing='ease-in-out'
+                        data-aos-once='true'>
                         <Image
                             src='/logox.svg'
                             width={128}
@@ -15,24 +19,44 @@ export default function Footer() {
                             className='h-8'
                             alt=' Logo'
                         />
-                    </a>
+                    </div>
                     <ul className='flex flex-wrap items-center font-roboto mb-6 text-sm font-medium text-white sm:mb-0'>
-                        <li>
+                        <li
+                            data-aos='fade-up'
+                            data-aos-delay='750'
+                            data-aos-duration='800'
+                            data-aos-easing='ease-in-out'
+                            data-aos-once='true'>
                             <a href='#' className='hover:underline me-4 md:me-6'>
                                 Tentang
                             </a>
                         </li>
-                        <li>
+                        <li
+                            data-aos='fade-up'
+                            data-aos-delay='800'
+                            data-aos-duration='800'
+                            data-aos-easing='ease-in-out'
+                            data-aos-once='true'>
                             <a href='#' className='hover:underline me-4 md:me-6'>
                                 Privacy Policy
                             </a>
                         </li>
-                        <li>
+                        <li
+                            data-aos='fade-up'
+                            data-aos-delay='850'
+                            data-aos-duration='800'
+                            data-aos-easing='ease-in-out'
+                            data-aos-once='true'>
                             <a href='#' className='hover:underline me-4 md:me-6'>
                                 Licensing
                             </a>
                         </li>
-                        <li>
+                        <li
+                            data-aos='fade-up'
+                            data-aos-delay='900'
+                            data-aos-duration='800'
+                            data-aos-easing='ease-in-out'
+                            data-aos-once='true'>
                             <a href='#' className='hover:underline'>
                                 Kontak
                             </a>
@@ -45,7 +69,7 @@ export default function Footer() {
                     <a href='#' className='hover:underline'>
                         nusa MarketCap
                     </a>
-                    . All Rights Reserved.
+                    . By Jason AlHilal.
                 </span>
             </div>
         </footer>

@@ -7,7 +7,7 @@ export default function TickerProvider({children}) {
     const [error, setError] = useState({data: '', coinData: '', search: ''})
     const [searchData, setSearchData] = useState()
     const [coinSearch, setCoinSearch] = useState('')
-    // parrams
+    // parrams (NOTES : for further developing pagination and search-filter)
     const [currency, setCurrency] = useState('idr')
     const [sortBy, setSortBy] = useState('market_cap_desc')
     const [page, setPage] = useState(1)
